@@ -133,6 +133,22 @@ th, td {
     color: #FFAE00;    
 }
 
+.btn-register, .btn-login {
+    display: inline-block;
+    width: 150px; /* Establece un ancho fijo para ambos botones. Ajusta el valor según tus preferencias. */
+    padding: 13px;
+    border-radius: 25px;
+    background-color: #ff9000;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 0 10px; /* Ajusta el margen horizontal entre los botones. */
+}
+
+
+
 .btn-1{
     display: inline-block;
     padding: 13px 45px;
@@ -143,11 +159,15 @@ th, td {
     text-transform: capitalize;
     box-shadow: 0 0 20px rgba(0,0,0,0.2 );
 }
-
-.btn-1:hover{
-    background-color: #EF8700;
+.btn-register:hover{
+    background-color: #f5c107;
 }
-
+.btn-login:hover{
+    background-color: #f5c107;
+}
+.btn-1:hover{
+    background-color: #f5c107;
+}
 .header-img{
     width: 50%;
     text-align: right;
@@ -412,6 +432,10 @@ p{
     }
     .header-txt p {
         margin-bottom: 20px;
+    }
+    .btn-register, .btn-login {
+        display: block;
+        margin: 10px 0; 
     }
     .header-img {
         width: 100%;
