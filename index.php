@@ -231,7 +231,7 @@
         </div>
         <div class="contain-main-footer">
             <div class="contact">
-                <h4>Datos de contacto</h4>
+                <h4 id="contact-title">Datos de contacto</h4>
                 <address>
                     <ul>
                         <li>
