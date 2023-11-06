@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url("img\bg4.jpg");
+    background-color: #0f0500f4;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +35,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(125, 112, 45, 0.819);
+    background-color: rgba(229, 135, 13, 0.698);
 
 }
 
@@ -75,7 +75,7 @@ main{
 
 .caja__trasera button:hover{
     background: #fff;
-    color: #46A2FD;
+    color: #efaf0d;
 }
 
 /*Formularios*/
@@ -105,7 +105,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: #46A2FD;
+    color:rgba(244, 140, 4, 0.923);
 }
 
 .contenedor__login-register form input{
@@ -123,7 +123,7 @@ main{
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #46A2FD;
+    background: rgba(244, 140, 4, 0.923);
     font-weight: 600;
     cursor: pointer;
     color: white;
