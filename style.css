@@ -31,11 +31,18 @@ body {font-family: 'Poppins', sans-serif;
     justify-content: space-between;
     z-index: 1000;
 }
-.logo{
+/* .logo{
     font-size: 25px;
     color: #ff9000;
     text-transform: uppercase;
     font-weight: 800;   
+} */
+.logo img {
+    width: 70px; 
+    height: auto;
+    margin-top:8px;
+    margin-left: 20px;
+    border-radius: 16px;
 }
 
 .btn-ingreso {
@@ -548,6 +555,19 @@ p{
     }
     .header-img img {
         width: 300px;
+    }
+}
+@media (max-width: 991px) {
+    .logo img {
+        width: 20px; /* Reduce el tamaño del logotipo para pantallas más pequeñas. Ajusta según tus necesidades. */
+    }
+    
+    .header-txt {
+        margin-right: 20px; /* Añade un margen derecho para dar espacio al párrafo "Bienvenido". Ajusta según tus necesidades. */
+    }
+
+    .header-txt h1 {
+        font-size: 40px; /* Reduce el tamaño del título si es necesario. Ajusta según tus necesidades. */
     }
 }
 

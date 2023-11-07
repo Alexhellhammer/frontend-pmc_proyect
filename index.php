@@ -1,10 +1,16 @@
+
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3f8094d084.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>PMC GOURMET</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +18,9 @@
     <header class="header" id="inicio">
         <img class="bg" src="img\bg.png" alt="">
         <div class="menu container">
-            <a href="#" class="logo">Logo</a>
+            <a href="#" class="logo">
+            <img src="img\IMG-20230611-WA0004.jpg" alt="Logo">
+            </a>
             <input type="checkbox" id="menu">
             <label for="menu">
                 <img src="img\menu.png" class="menu-icono" alt="">
@@ -25,7 +33,19 @@
                     <li><a href="#Contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <a href="registroeingreso.html" class="btn-ingreso">Ingreso de Cliente</a>
+            <a href="registroeingreso.html" class="btn-ingreso">
+                <?php
+                if (isset($_SESSION['usuario'])) {
+                    echo '¡Hola, ' . $_SESSION['usuario'] . '!';
+                    echo '<a href="php/logout.php" class="btn-ingreso">Cerrar Sesión</a>';
+                } else {
+                    echo 'Ingreso de Cliente';
+                }
+                ?>
+            </a>
+
+            <a href="php/logout.php" class="btn-ingreso">Cerrar Sesión</a>
+
             <div>
                 <ul>
                     <li class="submenu">
@@ -57,9 +77,6 @@
                     doloribus fugiat libero esse aliquam possimus ratione est excepturi modi quidem nulla eveniet.
                     
                 </p>
-                
-                <!-- <button type="button" class="btn-register">Registrate</button>
-                <button class="btn-login">Ingresa</button> -->
             </div>
             <div class="header-img">
                 <img src="img\pl-1.png" alt="">
