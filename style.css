@@ -393,9 +393,12 @@ p{
 }
 
 .footer .logo-f img {
-    max-width: 100%;
+    max-width: 10%;
     height: auto;
+    border-radius: 25px; 
+    overflow: hidden; 
 }
+
 
 .footer .contain-main-footer {
     display: flex;
@@ -559,15 +562,14 @@ p{
 }
 @media (max-width: 991px) {
     .logo img {
-        width: 20px; /* Reduce el tamaño del logotipo para pantallas más pequeñas. Ajusta según tus necesidades. */
+        width: 30px; 
     }
     
     .header-txt {
-        margin-right: 20px; /* Añade un margen derecho para dar espacio al párrafo "Bienvenido". Ajusta según tus necesidades. */
-    }
+        margin-right: 20px; 
 
     .header-txt h1 {
-        font-size: 40px; /* Reduce el tamaño del título si es necesario. Ajusta según tus necesidades. */
+        font-size: 40px; /
     }
 }
 
@@ -640,6 +642,13 @@ p{
     .footer {
         padding: 30px;
     }
+    .footer .logo-f img {
+        max-width: 25%;
+        height: auto;
+        border-radius: 25px; 
+        overflow: hidden; 
+    }
+
 
     .footer .contain-main-footer {
         flex-direction: column;
@@ -656,5 +665,6 @@ p{
     .footer .contain-main-footer .location iframe {
         height: 200px;
     }
+
 }
 

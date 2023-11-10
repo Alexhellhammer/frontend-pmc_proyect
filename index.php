@@ -19,7 +19,7 @@ session_start();
         <img class="bg" src="img\bg.png" alt="">
         <div class="menu container">
             <a href="#" class="logo">
-            <img src="img\IMG-20230611-WA0004.jpg" alt="Logo">
+                <img src="img\IMG-20230611-WA0004.jpg" alt="Logo">
             </a>
             <input type="checkbox" id="menu">
             <label for="menu">
@@ -33,19 +33,21 @@ session_start();
                     <li><a href="#Contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <a href="registroeingreso.html" class="btn-ingreso">
+            
+             <!-- Botón "Ingreso de Cliente" -->
+            <a href="<?php echo isset($_SESSION['usuario']) ? 'php/logout.php' : 'registroeingreso.php'; ?>" class="btn-ingreso">
                 <?php
                 if (isset($_SESSION['usuario'])) {
                     echo '¡Hola, ' . $_SESSION['usuario'] . '!';
-                    echo '<a href="php/logout.php" class="btn-ingreso">Cerrar Sesión</a>';
+                    // Agrega aquí el enlace de "Cerrar Sesión" dentro del bloque del usuario autenticado
+                    echo '<a href="php/logout.php" class="btn-cerrar-sesion">Cerrar Sesión</a>';
                 } else {
                     echo 'Ingreso de Cliente';
                 }
                 ?>
             </a>
 
-            <a href="php/logout.php" class="btn-ingreso">Cerrar Sesión</a>
-
+    
             <div>
                 <ul>
                     <li class="submenu">
@@ -75,15 +77,15 @@ session_start();
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam alias eligendi, veritatis saepe et, iure quae doloribus fugiat libero esse aliquam possimus ratione est excepturi modi quidem nulla eveniet.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam alias eligendi, veritatis saepe et, iure quae doloribus fugiat libero esse aliquam possimus ratione est excepturi modi quidem nulla eveniet.
                     doloribus fugiat libero esse aliquam possimus ratione est excepturi modi quidem nulla eveniet.
-                    
+    
                 </p>
             </div>
             <div class="header-img">
                 <img src="img\pl-1.png" alt="">
             </div>
-
         </div>
     </header>
+
   
 
            <!-- Desayunos -->
